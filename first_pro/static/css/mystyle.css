@@ -1,0 +1,40 @@
+h1{
+    color: red;
+}
+
+.monster th, .monster td {
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+h1 {
+    color: red;
+    margin: 0; /* Remove default margin 
+    align-self: flex-start; /* Align text to the start (top) 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Set container height to full viewport height 
+    position: relative; /* Add relative positioning 
+}
+
+.container img {
+    max-width: 25%; /* Ensure images don't exceed container width 
+    max-height: 25%; /* Ensure images don't exceed container height 
+}
+*/
