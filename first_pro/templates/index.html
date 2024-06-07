@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monster Django Project</title>
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello in Django Monster Project - Welcome!!</h1>
+        <h2>{{ insert_content }}</h2>
+        <h3> Here are your access records:</h3>
+        <img src="{% static 'images/freelancer.jpg' %}" alt="UH AH, DIDN'T SHOW">
+        <img src="{% static 'images/beautiful.jpg' %}" alt="UH AH, DIDN'T SHOW">
+
+    
+	    <div class="djangotwo">
+	    	{% if access_records %}
+		    	<table>
+		    			<thead>
+		    				<th>Site Name </th>
+		    				<th>Date Accessed</th>
+
+		    	
+
+		    		{% for acc in access_records %}
+		    		<tr>
+		    			
+		    			<td>{{ acc.name }}</td>
+		    			<td>{{ acc.date }}</td>
+		    		</tr>
+		    		{% endfor %}
+	    		</table>
+	    		{% else %}
+	    		<p>NO ACCESS RECORDS FOUND</p>
+	    		{% endif %}
+	    </div>
+
+	</div>
+
+    		
+</body>
+</html>
+
+<!--
+	this is a comment
+	doc type
+	{% load static %}
+	head section
+	<link rel= "stylesheet" href="{ % static 'css/mystyle.css' %}"/>
+	
+	put your style container flex at the head section under the rel css.
+
+	at the body:
+	<h2> {{ insert_contnt}}</h2> to pass the content from tempalte.
+	<img src="{% static 'images/freelancer.jpg'%}" alt = "ooooh">
+	-->	
