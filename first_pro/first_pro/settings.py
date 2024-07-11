@@ -81,8 +81,8 @@ WSGI_APPLICATION = 'first_pro.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.core.files.storage.FileSystemStorage',
-        'NAME': BASE_DIR / 'media',  # Adjust path if needed
+        'ENGINE': 'django.contrib.sessions.backends.db',
+        'NAME': 'web_access',  # Replace with any name
     }
 }
 
