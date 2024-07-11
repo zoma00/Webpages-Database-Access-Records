@@ -131,5 +131,5 @@ STATICFILES_DIRS = [
 
 #DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MIGRATION_MODULES = {'first_app': 'first_app.migrations'}  # Comment out this line
+#MIGRATION_MODULES = {'first_app': 'first_app.migrations'}  # Comment out this line
 
